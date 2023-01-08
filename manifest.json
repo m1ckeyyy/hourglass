@@ -1,0 +1,28 @@
+{
+	"manifest_version": 3,
+	"name": "_Hourglass",
+	"version": "1.0",
+	"permissions": ["storage", "activeTab", "scripting", "tabs"],
+	"host_permissions": ["https://fakeyurt.netlify.app/*"],
+	"background": {
+		"service_worker": "background.js"
+	},
+
+	"description": "Hourglass Extension",
+
+	"content_scripts": [
+		{
+			"matches": ["https://fakeyurt.netlify.app/*"],
+			"js": ["content.js"]
+		}
+	],
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"icons": {
+		"16": "icons/icon16-1.png",
+		"32": "icons/icon32-1.png",
+		"48": "icons/icon48-1.png",
+		"128": "icons/icon128-1.png"
+	}
+}

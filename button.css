@@ -1,0 +1,59 @@
+.container {
+	width: 350px;
+	height: 190px;
+	border-radius: 0 0 10px 10px;
+}
+
+#timeReview,
+#timeTotal {
+	font-size: 2rem;
+	color: black;
+	font-family: "Montserrat", sans-serif;
+}
+
+.reviewText {
+	font-size: 1rem;
+	color: black;
+	font-family: "Montserrat", sans-serif;
+}
+.timersReview {
+	position: absolute;
+	top: 45px;
+	visibility: visible;
+}
+.activity {
+	font-size: 1.2rem;
+	color: black;
+	font-family: "Montserrat", sans-serif;
+	position: absolute;
+	top: 12px;
+}
+.logohourglass {
+	width: 120px;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+body {
+	background-color: #edede9;
+}
+button {
+	position: absolute;
+	bottom: 12px;
+}
+#google {
+	left: 25px;
+}
+#genpact {
+	left: 144px;
+}
+#wellness {
+	visibility: visible;
+	right: 25px;
+}
+#reviewing {
+	visibility: hidden;
+}
+.logo {
+	width: 40px;
+}
