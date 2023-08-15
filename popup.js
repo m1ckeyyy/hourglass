@@ -74,3 +74,4 @@ function format(val) {
 window.onload = getTime();
 chrome.storage.onChanged.addListener(getTime);
 chrome.storage.onChanged.addListener(update);
+//test commit
