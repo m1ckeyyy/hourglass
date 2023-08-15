@@ -41,11 +41,11 @@ button {
 	position: absolute;
 	bottom: 12px;
 }
-#google {
+#client {
 	left: 25px;
 }
-#genpact {
-	left: 144px;
+#company {
+	left: 138px;
 }
 #wellness {
 	visibility: visible;

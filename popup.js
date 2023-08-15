@@ -1,12 +1,10 @@
 let timeReview = document.getElementById("timeReview");
 let timeTotal = document.getElementById("timeTotal");
 let revHr, revMin, revSec, totHr, totMin, totSec;
-let value = 0; //ms
+let value = 0;
 let totalValue = 0;
 let interval;
 let started;
-//timeReview = "00:00:00";
-//timeTotal = "00:00:00";
 
 setInterval(update, 200);
 chrome.storage.sync.get(["total"], function (e) {
@@ -30,7 +28,6 @@ function update() {
 	revSec = (value / 1000) % 60;
 	revMin = (value / 1000 / 60) % 60;
 	revHr = value / 1000 / 60 / 60;
-	// using date.nows
 	timeReview.innerHTML = `${format(revHr)}:${format(revMin)}:${format(revSec)}`;
 
 	totSec = (totalValue / 1000) % 60;
@@ -49,12 +46,7 @@ function submitTime() {
 	resetTime();
 	timeReview.innerHTML = "00:00:00";
 }
-// function startTime(){
 
-// 	if
-// }
-
-//
 function getTime() {
 	console.log("getTime()");
 	chrome.storage.sync.get(["total", "revTime"], function (e) {
@@ -74,4 +66,3 @@ function format(val) {
 window.onload = getTime();
 chrome.storage.onChanged.addListener(getTime);
 chrome.storage.onChanged.addListener(update);
-//test commit
